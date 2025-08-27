@@ -18,6 +18,7 @@ echo ""
 # Creating directory tree:
 echo "Creating directory tree..."
 mkdir -p $PUBLIC/csf_original
+mkdir -p $PUBLIC/csf
 
 echo "Download original csf files..."
 echo "--------------------------------------------------------------------"
@@ -65,7 +66,7 @@ rsync -a $PUBLIC/csf_original/csf/changelog.txt $PUBLIC/csf/
 rsync -a $PUBLIC/csf_original/csf/license.txt $PUBLIC/csf/
 rsync -a $PUBLIC/csf_original/csf/readme.txt $PUBLIC/csf/
 rsync -a $PUBLIC/csf_original/csf/version.txt $PUBLIC/csf/
-
+rsync -a $PUBLIC/csf_original/csf/install.txt $PUBLIC/csf/
 
 # Fixing permissions:
 echo "Fixing premissions..."
