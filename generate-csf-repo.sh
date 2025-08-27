@@ -76,6 +76,9 @@ chown $APACHEUSER:$APACHEGROUP $PUBLIC
 echo "Cleaning..."
 rm -rf $PUBLIC/csf_original/csf
 rm -rf $PUBLIC/csf_original/csf_gen.tgz
+
+echo ""
+echo "Check your instalation guide: http://$DOMAIN/install.txt"
 echo ""
 echo "DONE"
 echo ""
