@@ -1,9 +1,10 @@
 # csf-after-eol
-Scripts for setting a repo for CSF-Firewall after end of life (After 31st August)
-
-dependencies: wget, rsync, modern bash :)
+Scripts for csf after end of life (After 31st August)
 
 ## generate-csf-repo.sh
+Script for setting a repo for CSF-Firewall after end of life (After 31st August)
+
+dependencies: wget, rsync, modern bash :)
 ### Download
 ```
 wget https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/generate-csf-repo.sh
@@ -22,3 +23,10 @@ ORIGINALCSF='https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/head
 chmod +x generate-csf-repo.sh
 ./generate-csf-repo.sh
 ```
+## fix-existing-csf.sh
+
+### Download
+
+### Change Varibles
+
+### Run
