@@ -17,6 +17,11 @@ sed -i 's|AUTO_UPDATES = "1"|AUTO_UPDATES = "0"|g' `grep -rHnl 'AUTO_UPDATES = "
 # Fix servers:
 echo "Changing the domain..."
 sed -i "s|download.configserver.com|$DOMAIN|g" `grep -rHnl download.configserver.com /etc/csf/`
+
+# Restart csf and lfd
+csf -r
+systemctl restart lfd
+
 echo ""
 echo "DONE"
 echo ""
