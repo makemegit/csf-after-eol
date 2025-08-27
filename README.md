@@ -4,7 +4,7 @@ Scripts for csf after end of life (After 31st August)
 ## generate-csf-repo.sh
 Script for setting a repo for CSF-Firewall after end of life (After 31st August)
 
-dependencies: wget, rsync, modern bash :)
+dependencies: wget, rsync, modern bash
 ### Download
 ```
 wget https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/generate-csf-repo.sh
@@ -25,8 +25,21 @@ chmod +x generate-csf-repo.sh
 ```
 ## fix-existing-csf.sh
 
+Disable updates and change the repo with your own.
+
 ### Download
+```
+wget https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/fix-existing-csf.sh
+
+```
 
 ### Change Varibles
-
+```
+# Variables
+DOMAIN='download.DOMAIN.COM' # download subdomain is mandatory !!!
+```
 ### Run
+```
+chmod +x 
+./fix-existing-csf.sh
+```
