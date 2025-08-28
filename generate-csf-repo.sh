@@ -2,7 +2,7 @@
 # 
 ## name: generate-csf-repo.sh
 ## Script for setting a repo for CSF-Firewall after end of life (After 31st August)
-## by @makeme v.2025-08-27
+## by @makeme v.2025-08-28
 #
 
 # Variables
@@ -11,6 +11,7 @@ DOMAIN='download.DOMAIN.COM' # download subdomain is mandatory !!!
 APACHEUSER='admin'
 APACHEGROUP='www-data'
 ORIGINALCSF='https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/csf.tgz' # Change with you own archive backup for safety
+#ORIGINALCSF=https://download.configserver.com/csf.tgz
 
 # Download original csf files (change the link with your backup archive):
 echo ""
@@ -22,16 +23,17 @@ mkdir -p $PUBLIC/csf
 
 echo "Download original csf files..."
 echo "--------------------------------------------------------------------"
-#wget -O https://download.configserver.com/csf.tgz -P $PUBLIC/csf_original
 wget $ORIGINALCSF -O $PUBLIC/csf_original/csf.tgz
 
 # Downloading all txt files
-#wget https://download.configserver.com/version.txt -P $PUBLIC/
-#wget https://download.configserver.com/csf/changelog.txt -P $PUBLIC/csf
-#wget https://download.configserver.com/csf/install.txt -P $PUBLIC/csf
-#wget https://download.configserver.com/csf/license.txt -P $PUBLIC/csf
-#wget https://download.configserver.com/csf/readme.txt -P $PUBLIC/csf
-#wget https://download.configserver.com/csf/version.txt -P $PUBLIC/csf
+#wget https://download.configserver.com/version.txt -O $PUBLIC/version.txt
+#wget https://download.configserver.com/csf/changelog.txt -O $PUBLIC/csf/changelog.txt
+#wget https://download.configserver.com/csf/install.txt -O $PUBLIC/csf/install.txt
+#wget https://download.configserver.com/csf/license.txt -O $PUBLIC/csf/license.txt
+#wget https://download.configserver.com/csf/readme.txt -O $PUBLIC/csf/readme.txt
+#wget https://download.configserver.com/csf/version.txt -O $PUBLIC/csfversion.txt
+#wget http://download.configserver.com/abuse_login-attack_0.2.json -O $PUBLIC/abuse_login-attack_0.2.json
+wget https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/abuse_login-attack_0.2.json -O $PUBLIC/abuse_login-attack_0.2.json
 echo "--------------------------------------------------------------------"
 
 # Extract original files:
