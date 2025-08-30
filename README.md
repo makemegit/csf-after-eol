@@ -47,6 +47,8 @@ chmod +x
 ```
 ### Update and check version:
 ```
+cp -R /etc/csf /etc/csf.backup
+cp /usr/local/csf/version.txt /usr/local/csf/version-backup.txt
 csf -u
 csf -v
 ```
