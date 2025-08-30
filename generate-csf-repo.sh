@@ -11,6 +11,7 @@ DOMAIN='download.DOMAIN.COM' # download subdomain is mandatory !!!
 APACHEUSER='admin'
 APACHEGROUP='www-data'
 ORIGINALCSF='https://raw.githubusercontent.com/makemegit/csf-after-eol/refs/heads/main/csf.tgz' # Change with you own archive backup for safety
+#ORIGINALCSF='https://github.com/waytotheweb/scripts/raw/refs/heads/main/csf.tgz'
 #ORIGINALCSF=https://download.configserver.com/csf.tgz
 
 # Download original csf files (change the link with your backup archive):
