@@ -1,5 +1,6 @@
 # csf-after-eol
 Scripts for csf after end of life (After 31st August)
+
 Official guide: https://github.com/centminmod/configserver-scripts/blob/main/README-gpl-csf.md
 
 ## generate-csf-repo.sh
