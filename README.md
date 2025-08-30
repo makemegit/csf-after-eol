@@ -45,3 +45,8 @@ DOMAIN='download.DOMAIN.COM' # download subdomain is mandatory !!!
 chmod +x 
 ./fix-existing-csf.sh
 ```
+### Update and check version:
+```
+csf -u
+csf -v
+```
