@@ -27,7 +27,7 @@ chmod +x generate-csf-repo.sh
 ```
 ## fix-existing-csf.sh
 
-Disable updates and change the repo with your own.
+Script for disabling updates and changing the repo with your own.
 
 ### Download
 ```
